@@ -9,7 +9,7 @@ export default function Home() {
 
   const routeToOrder = () => {
     // console.log(history)
-        history.push('/items-list')
+        history.push('/pizza')
   }
 
   return (
@@ -116,5 +116,7 @@ const HomeContainer = styled.div `
       flex-direction: row;
       height: auto;
       justify-content: space-evenly;
+      padding-bottom: 20px
+      ;
   }
   `
