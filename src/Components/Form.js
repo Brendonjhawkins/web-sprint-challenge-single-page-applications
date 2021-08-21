@@ -15,7 +15,7 @@ const PizzaForm = (props) => {
     }
 
     return (
-        <FormStyle className='formstyle'>
+        <FormStyle className='formstyle' id='pizza-form'>
             <div className = "pizzaFormDiv">
             <h1>Build your own pizza!</h1>
             <img src={Assets}/>
@@ -27,12 +27,12 @@ const PizzaForm = (props) => {
 
                 <label><h3>Your name</h3>
                     <h4>Required</h4>
-                    <input name = "name" type="text" value = {values.name} onChange={onChange}/>
+                    <input name = "name" type="text" value = {values.name} onChange={onChange} />
                 </label>
                 
                 <label><h3>Choice of size</h3>
                     <h4>Required</h4>
-                    <select
+                    <select id='size-dropdown'
                     onChange={onChange}
                     value={values.size}
                     name='size'>
@@ -78,7 +78,7 @@ const PizzaForm = (props) => {
                     </label>
                 </label>
 
-                <label>
+                <label id='special-text'>
                 <h3>Special Instructions</h3>
                 <input style = {{width: '50%', marginLeft:'4%'}} name = 'instructions' type = 'text' onChange={onChange} value = {values.instructions}/>
                 </label>

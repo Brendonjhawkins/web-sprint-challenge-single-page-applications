@@ -25,7 +25,7 @@ export default function Home() {
       <button
         onClick={routeToOrder}
         className='md-button shop-button'
-      >
+        id='order-pizza'>
         ORDER
       </button>
       <div className='opt-header'>

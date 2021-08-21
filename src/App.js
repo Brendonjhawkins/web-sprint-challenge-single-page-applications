@@ -77,8 +77,8 @@ export default function App (){
         </div>
       </nav>
       <Switch>
-      <Route path="/pizza">
-        <Form 
+      <Route path="/pizza" id='pizza-form'>
+        <Form id='pizza-form' 
         values={formValues} 
         change={inputChange} 
         submit={formSubmit} 
